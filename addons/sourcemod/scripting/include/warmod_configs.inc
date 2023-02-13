@@ -246,9 +246,6 @@ static void Gamemode_Competitive_Server(char[] WM_VERSION)
 	WriteFileLine(file, "sv_logflush 0					// Flush the log file to disk on each write (slow).");
 	WriteFileLine(file, "sv_logsdir logfiles                             // Folder in the game directory where server logs will be stored.");
 	WriteFileLine(file, "sv_maxrate 0					// min. 0.000000 max. 30000.000000 replicated  Max bandwidth rate allowed on server, 0 == unlimited");
-	WriteFileLine(file, "sv_mincmdrate 64				// This sets the minimum value for cl_cmdrate. 0 == unlimited.");
-	WriteFileLine(file, "sv_minupdaterate 64			// This sets the minimum value for cl_updaterate. 0 == unlimited.");
-	WriteFileLine(file, "sv_minrate 80000				// Min bandwidth rate allowed on server, 0 == unlimited");
 	WriteFileLine(file, "sv_competitive_minspec 1                        // Enable to force certain client convars to minimum/maximum values to help prevent competitive advantages.");
 	WriteFileLine(file, "sv_competitive_official_5v5 1			// Enable to force the server to show 5v5 scoreboards and allows spectators to see characters through walls.");
 	WriteFileLine(file, "sv_pausable 1                                   // Is the server pausable.");
